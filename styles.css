@@ -1,0 +1,429 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    direction: rtl;
+    text-align: right;
+}
+
+/* Navigation */
+.navbar {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    min-height: calc(100vh - 64.4px);
+    display: flex;
+    align-items: center;
+    /* padding-top: 80px; */
+}
+
+/* Cards */
+.card {
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-body {
+    padding: 2rem;
+}
+
+/* Testimonials */
+.testimonials-section .card {
+    background-color: #fef3c6;
+    border-radius: 10px;
+}
+
+.testimonials-section img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+/* courses section */
+#courses {  
+    background-color: #f8f9fa;  
+}  
+
+.card {  
+    transition: transform 0.3s, box-shadow 0.3s;  
+}  
+
+.card:hover {  
+    transform: translateY(-5px);  
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);  
+}  
+
+.card-header {  
+    font-size: 1.25rem;  
+    padding: 1rem;  
+}  
+/* Course Registration */
+.course-registration .card {
+    background-color: #f8f9fa;
+    border-radius: 15px;
+}
+
+.course-registration .form-control {
+    border-radius: 8px;
+    padding: 12px;
+}
+
+.course-registration .btn-primary {
+    padding: 12px 30px;
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+/* Footer */
+footer {
+    background-color: #1a1a1a;
+}
+
+footer a {
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer h5 {
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-section {
+        text-align: center;
+        /* padding: 60px 0; */
+    }
+
+    .hero-section .col-lg-6:last-child {
+        margin-top: 30px;
+    }
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    animation: fadeIn 1s ease-out;
+}
+
+/* Custom Colors */
+.text-primary {
+    color: #007bff !important;
+}
+
+.bg-primary {
+    background-color: #007bff !important;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary:hover,
+.btn-outline-primary:hover {
+    transform: translateY(-2px);
+}
+
+/* Social Media Icons Styling */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: nowrap;
+}
+
+.social-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.social-icon:hover {
+    transform: translateY(-2px);
+    background-color: white;
+    text-decoration: none;
+}
+
+.social-icon i {
+    font-size: 20px;
+}
+
+
+@media (max-width: 768px) {
+    .social-icons {
+        justify-content: center;
+        margin-top: 1rem;
+        flex-wrap: wrap;
+    }
+
+    .social-media.text-md-end {
+        text-align: center !important;
+    }
+}
+
+/* Course Registration Form Styling */
+.course-form-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.course-form {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 2.5rem;
+}
+
+.section-header h2 {
+    color: #2d3436;
+    margin-bottom: 1rem;
+}
+
+.section-header p {
+    color: #636e72;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.course-option {
+    border: 2px solid #e9ecef;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.course-option:hover {
+    border-color: #007bff;
+    box-shadow: 0 5px 20px rgba(0, 123, 255, 0.1);
+    transform: translateY(-2px);
+}
+
+.course-header {
+    background-color: #f8f9fa;
+    border-bottom: 2px solid #e9ecef;
+    transition: all 0.3s ease;
+}
+
+.course-option:hover .course-header {
+    background-color: #e7f5ff;
+}
+
+.form-check-input {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-top: 0.25rem;
+}
+
+.form-check-input:checked {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.course-details {
+    background-color: #fff;
+}
+
+.topic-title {
+    color: #2d3436;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.topic-description {
+    color: #636e72;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.phone-input-container {
+    background-color: #f8f9fa;
+    padding: 2rem;
+    border-radius: 12px;
+    margin: 2rem 0;
+}
+
+.phone-field-wrapper {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.country-code {
+    background-color: #fff;
+    border: 2px solid #e9ecef;
+    border-radius: 8px;
+    font-weight: 600;
+    color: #2d3436;
+    white-space: nowrap;
+}
+
+.form-control {
+    height: 50px;
+    border: 2px solid #e9ecef;
+    border-radius: 8px;
+    font-size: 1rem;
+    padding: 0.75rem 1rem;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.15);
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    border-radius: 8px;
+    padding: 1rem 2.5rem;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    box-shadow: 0 5px 15px rgba(0, 123, 255, 0.2);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .course-form {
+        padding: 1.5rem;
+    }
+
+
+    .course-details {
+        padding: 1rem;
+    }
+
+    .topic-title {
+        font-size: 1rem;
+    }
+
+    .topic-description {
+        font-size: 0.85rem;
+    }
+}
+
+/* Privacy Policy Styles */
+.privacy-policy {
+    background-color: #f8f9fa;
+}
+
+.privacy-policy .card {
+    border: none;
+    border-radius: 15px;
+}
+
+.privacy-policy .section {
+    border-bottom: 1px solid #e9ecef;
+    padding-bottom: 1.5rem;
+}
+
+.privacy-policy .section:last-child {
+    border-bottom: none;
+}
+
+.privacy-policy h1 {
+    color: #2d3436;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.privacy-policy h2 {
+    color: #2d3436;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.privacy-policy h5 {
+    color: #2d3436;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.privacy-policy .alert {
+    border-radius: 10px;
+    border: none;
+}
+
+.privacy-policy .alert-info {
+    background-color: #e7f5ff;
+    color: #2d3436;
+}
+
+.privacy-policy .alert-primary {
+    background-color: #e7f5ff;
+    color: #2d3436;
+}
+
+.privacy-policy ul li {
+    line-height: 1.8;
+}
+
+.privacy-policy .text-primary {
+    color: #007bff !important;
+}
+
+.privacy-policy .text-warning {
+    color: #ffc107 !important;
+}
+
+/* Responsive Styles for Privacy Policy */
+@media (max-width: 768px) {
+    .privacy-policy h1 {
+        font-size: 2rem;
+    }
+
+    .privacy-policy h2 {
+        font-size: 1.5rem;
+    }
+
+    .privacy-policy h5 {
+        font-size: 1.1rem;
+    }
+
+    .privacy-policy .card-body {
+        padding: 1.5rem;
+    }
+
+    .privacy-policy .section {
+        padding-bottom: 1rem;
+    }
+}
